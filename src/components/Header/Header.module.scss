@@ -1,0 +1,24 @@
+.header {
+    background-color: black;
+
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+
+    li {
+        color: #ffffff;
+    }
+}
