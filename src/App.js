@@ -11,7 +11,7 @@ import Catalog from './pages/Catalog';
 
 function App() {
   return (
-    <>
+    <div className="App">
       <Header />
 
       <Routes>
@@ -22,7 +22,7 @@ function App() {
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/catalog" element={<Catalog />} />
       </Routes>
-    </>
+    </div>
   );
 }
 

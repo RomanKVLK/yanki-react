@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from '../components/Header';
+
+import styles from './MainPage.module.scss';
 
 const MainPage = () => {
   return (
-    <div className="main">
-      <Header />
+    <div className={styles.Main}>
       <div>
         <h4>Новая коллекция</h4>
         <p>
