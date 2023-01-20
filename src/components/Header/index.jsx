@@ -1,25 +1,39 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.scss';
+import { useLocation } from 'react-router-dom';
+import './Header.module.scss';
 
 const Header = () => {
+  const location = useLocation();
+  console.log(location.pathname);
   return (
     <header className={styles.header}>
       <div className={styles.container}>
         <nav className={styles.nav}>
-          <button>
-            <img src="/img/burger-icon.svg" alt="Burger" />
-          </button>
-          <ul className={styles.nav__list}>
-            <li>New</li>
-            <li>
-              <Link to="catalog">Каталог</Link>
-            </li>
-            <li>
-              <Link to="aboutus">О нас</Link>
-            </li>
-          </ul>
-          <img src="/img/YANKI-logo.png" alt="Logo" width={160} height={40} />
+          <div className={styles.wrapper}>
+            <button
+              className={location.pathname === '/' ? styles.button_white : styles.button}></button>
+            <ul className={styles.nav__list}>
+              <li>New</li>
+              <li>
+                <Link to="catalog">Каталог</Link>
+              </li>
+              <li>
+                <Link to="aboutus">О нас</Link>
+              </li>
+            </ul>
+          </div>
+
+          <Link to="/">
+            <img
+              className={styles.logo}
+              src="/img/YANKI-logo.png"
+              alt="Logo"
+              width={160}
+              height={40}
+            />
+          </Link>
           <ul className={styles.nav__list}>
             <li>
               <img src="/img/search.svg" alt="Search" />

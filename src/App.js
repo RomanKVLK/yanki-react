@@ -8,6 +8,7 @@ import Cart from './pages/Cart';
 import AboutUs from './pages/AboutUs';
 import Favorites from './pages/Favorites';
 import Catalog from './pages/Catalog';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/catalog" element={<Catalog />} />
       </Routes>
+
+      <Footer />
     </div>
   );
 }
