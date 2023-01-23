@@ -9,6 +9,9 @@ import AboutUs from './pages/AboutUs';
 import Favorites from './pages/Favorites';
 import Catalog from './pages/Catalog';
 import Footer from './components/Footer';
+import Exchange from './pages/Exchange';
+import Payment from './pages/Payment';
+import Contacts from './pages/Contacts';
 
 function App() {
   return (
@@ -19,9 +22,12 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/*" element={<PageNotFound />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/about-us" element={<AboutUs />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/catalog" element={<Catalog />} />
+        <Route path="/exchange-and-return" element={<Exchange />} />
+        <Route path="/payment-and-delivery" element={<Payment />} />
+        <Route path="/contacts" element={<Contacts />} />
       </Routes>
 
       <Footer />

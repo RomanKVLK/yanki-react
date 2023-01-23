@@ -1,0 +1,14 @@
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.exchangeList {
+    display: flex;
+    justify-content: space-between;
+}
+
+.exchangeItem {
+    width: 165px;
+    text-align: center;
+}

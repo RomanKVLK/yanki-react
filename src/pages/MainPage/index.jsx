@@ -1,10 +1,11 @@
 import React from 'react';
+import MailingList from '../../components/MailingList';
 
 import styles from './MainPage.module.scss';
 
 const MainPage = () => {
   return (
-    <div className={styles.Main}>
+    <main className={styles.Main}>
       <div className={styles.container}>
         <h4 className={styles.Main_title}>Новая коллекция</h4>
         <img src="/img/Rectangle.svg" alt="Line" />
@@ -16,7 +17,8 @@ const MainPage = () => {
       <div className={styles._ibg}>
         <img src="/img/background.png" alt="Background" />
       </div>
-    </div>
+      <MailingList />
+    </main>
   );
 };
 
