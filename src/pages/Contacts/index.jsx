@@ -13,7 +13,7 @@ const Contacts = () => {
       </div>
       <div className={styles.wrapper}>
         <div>
-          <h2>В социальных сетях</h2>
+          <h2 className={styles.title}>В социальных сетях</h2>
           <ul>
             <li>
               <svg

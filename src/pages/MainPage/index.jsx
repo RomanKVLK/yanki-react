@@ -1,4 +1,5 @@
 import React from 'react';
+// import Categories from '../../components/Categories';
 import MailingList from '../../components/MailingList';
 
 import styles from './MainPage.module.scss';
@@ -17,6 +18,7 @@ const MainPage = () => {
       <div className={styles._ibg}>
         <img src="/img/background.png" alt="Background" />
       </div>
+      {/* <Categories /> */}
       <MailingList />
     </main>
   );
