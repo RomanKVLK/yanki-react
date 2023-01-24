@@ -5,12 +5,14 @@ const Exchange = () => {
   return (
     <main>
       <div className={styles.container}>
-        <div className="pagination">Главная {'>'} Обмен и возврат</div>
-        <h1 className="exchange-title">Обмен и возврат</h1>
-        <p className="exchange-descr">
+        <div className={styles.pagination}>
+          Главная <img src="/img/little-arrow.svg" alt="Arrow" /> Обмен и возврат
+        </div>
+        <h1 className={styles.title}>Обмен и возврат</h1>
+        <p className={styles.descr}>
           Если вам не подошел заказ, мы с удовольствием вам его обменяем или примем возврат
         </p>
-        <p className="exchange-descr">Обмен и возврат возможен в случае :</p>
+        <p className={styles.descr}>Обмен и возврат возможен в случае :</p>
         <ul className={styles.exchangeList}>
           <li className={styles.exchangeItem}>
             <svg

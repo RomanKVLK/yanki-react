@@ -20,7 +20,7 @@ const Header = () => {
                 <Link to="catalog">Каталог</Link>
               </li>
               <li>
-                <Link to="aboutus">О нас</Link>
+                <Link to="about-us">О нас</Link>
               </li>
             </ul>
           </div>

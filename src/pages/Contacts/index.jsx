@@ -1,15 +1,17 @@
 import React from 'react';
 import styles from './Contacts.module.scss';
+import MailingList from '../../components/MailingList';
 
 const Contacts = () => {
   return (
-    <main>
-      <div className={styles.container}>
-        <div className="pagination">Главная {'>'} Контакты</div>
-        <h1 className="exchange-title">Связаться с нами</h1>
-      </div>
+    <main className={styles.container}>
       <div>
-        {' '}
+        <div className={styles.pagination}>
+          Главная <img src="/img/little-arrow.svg" alt="Arrow" /> Контакты
+        </div>
+        <h1 className={styles.title}>Связаться с нами</h1>
+      </div>
+      <div className={styles.wrapper}>
         <div>
           <h2>В социальных сетях</h2>
           <ul>
@@ -57,6 +59,7 @@ const Contacts = () => {
           <p>г. Киев, улица Батумская, 18</p>
         </div>
       </div>
+      <MailingList />
     </main>
   );
 };
