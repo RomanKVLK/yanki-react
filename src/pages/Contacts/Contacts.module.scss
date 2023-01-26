@@ -22,3 +22,11 @@
     display: flex;
     justify-content: space-between;
 }
+
+.box {
+    display: flex;
+
+    li {
+        margin-right: 10px;
+    }
+}

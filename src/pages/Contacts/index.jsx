@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './Contacts.module.scss';
 import MailingList from '../../components/MailingList';
 
@@ -14,7 +13,7 @@ const Contacts = () => {
       <div className={styles.wrapper}>
         <div>
           <h2 className={styles.title}>В социальных сетях</h2>
-          <ul>
+          <ul className={styles.box}>
             <li>
               <svg
                 width="25"
@@ -44,18 +43,18 @@ const Contacts = () => {
           </ul>
         </div>
         <div>
-          <h2>По телефону</h2>
+          <h2 className={styles.title}>По телефону</h2>
           <ul>
             <li>+38(067) 158 82 66</li>
             <li>+38(073) 226 39 81</li>
           </ul>
         </div>
         <div>
-          <h2>По почте</h2>
+          <h2 className={styles.title}>По почте</h2>
           <p>example@gmail.com</p>
         </div>
         <div>
-          <h2>Наш офис</h2>
+          <h2 className={styles.title}>Наш офис</h2>
           <p>г. Киев, улица Батумская, 18</p>
         </div>
       </div>
