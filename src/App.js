@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import Exchange from './pages/Exchange';
 import Payment from './pages/Payment';
 import Contacts from './pages/Contacts';
+import PublicOffer from './pages/PublicOffer';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/exchange-and-return" element={<Exchange />} />
         <Route path="/payment-and-delivery" element={<Payment />} />
         <Route path="/contacts" element={<Contacts />} />
+        <Route path="/public-offer" element={<PublicOffer />} />
       </Routes>
 
       <Footer />

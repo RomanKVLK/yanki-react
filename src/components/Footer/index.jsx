@@ -35,7 +35,7 @@ const Footer = () => {
             <li>
               <Link to="/favorites">Избранное</Link>
             </li>
-            <li>Публичная оферта</li>
+            <li><Link to="/public-offer">Публичная оферта</Link></li>
             <li>Политика конфиденциальности</li>
           </ul>
         </div>
