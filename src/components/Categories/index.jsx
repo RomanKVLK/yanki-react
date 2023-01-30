@@ -13,12 +13,12 @@ const Categories = () => {
     <section className={styles.dark}>
       <h2>Каталог</h2>
       {categories.map((categoryName, i) => (
-        <h2
-          className={categoryId === i ? styles.active : ''}
+        <li
+          className={categoryId === i ? styles.active : styles.dark}
           onClick={() => clickCategoryName(i)}
           key={i}>
           {categoryName}
-        </h2>
+        </li>
       ))}
     </section>
   );

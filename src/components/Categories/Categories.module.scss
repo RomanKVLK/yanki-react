@@ -1,8 +1,10 @@
 .dark {
-  color: blue;
+  color: #000000;
   cursor: pointer;
 }
 
 .active {
-  color: red;
+  color: #cca88a;
+  font-weight: 800;
+  transition: all 0.1s ease-in-out;
 }
