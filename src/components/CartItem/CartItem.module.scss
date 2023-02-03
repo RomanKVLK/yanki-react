@@ -1,0 +1,17 @@
+.cartItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+    border-bottom: 1px solid #969696;
+}
+
+.productInfo {
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    width: 95px;
+    height: 110px;
+}

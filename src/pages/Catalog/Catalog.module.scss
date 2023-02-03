@@ -10,3 +10,14 @@
   padding-bottom: 15px;
   margin-top: 10px;
 }
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalogBlock {
+  display: grid;
+  gap: 15px;
+  grid-template-columns:repeat(3, 1fr);
+}
