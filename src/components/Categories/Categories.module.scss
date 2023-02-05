@@ -1,6 +1,15 @@
 .dark {
   color: #000000;
   cursor: pointer;
+
+  h2 {
+    color: #000000;
+    cursor: default;
+  }
+
+  &:hover {
+    color: #cca88a;
+  }
 }
 
 .active {
