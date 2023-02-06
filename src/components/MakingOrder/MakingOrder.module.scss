@@ -1,0 +1,82 @@
+.sectionBox {
+    h2 {
+        font-size: 20px;
+        line-height: 13px;
+        font-weight: 300;
+    }
+}
+
+.inputPerson {
+    width: 400px;
+    height: 50px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #969696;
+    border-radius: 0;
+    margin-bottom: 20px;
+    padding-left: 15px;
+
+    &:hover {
+        box-shadow: 1px 1px 3px 1px #acacac;
+    }
+
+    &:focus {
+        border-color: #E0BEA2;
+        box-shadow: 1px 1px 3px 1px #acacac;
+    }
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapperPersonal {
+    width: 820px;
+
+    h3 {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 300;
+        text-align: left;
+    }
+}
+
+.wrapperOrder {
+    width: 300px;
+}
+
+.wrapperInputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.wrapperDelivery {
+    display: flex;
+}
+
+.wrapperDeliveryBox {
+    width: 400px;
+
+    
+    h4 {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 300;
+        text-align: left;
+    }
+}
+
+.inputAddress {
+    div {
+        display: flex;
+        justify-content: space-between;
+    }
+}

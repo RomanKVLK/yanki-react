@@ -24,6 +24,65 @@
   width: 100px;
   height: 50px;
   text-align: center;
+  border: 1px solid #969696;
+  outline: none;
+  cursor: pointer;
+}
 
-  transition: all 0.5s ease-in-out;
+.countBlock {
+  width: 100px;
+  height: 50px;
+  border: 1px solid #969696;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  i {
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  button {
+    background-color: #ffffff;
+    border: none;
+    font-size: 30px;
+    color: #E0BEA2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
+
+    &:hover {
+      border: 1px solid #969696;
+      border-radius: 30%;
+      background-color: #E0BEA2;
+      svg {
+        path {
+          fill:#ffffff;
+        }
+      }
+      cursor: pointer;
+
+      transition: all 0.1s ease-in-out;
+    }
+  }
+}
+
+.itemCartDelete {
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+
+  &:hover {
+    svg {
+      path {
+        fill: #CCA88A;
+      }
+    }
+    transform: scale(1.1);
+  }
 }
