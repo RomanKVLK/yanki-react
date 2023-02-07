@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // import Categories from '../../components/Categories';
 import MailingList from '../../components/MailingList';
 
@@ -11,7 +12,7 @@ const MainPage = () => {
         <h4 className={styles.Main_title}>Новая коллекция</h4>
         <img src="/img/Rectangle.svg" alt="Line" />
         <p className={styles.Main_link}>
-          Смотеть новинки
+          <Link to="full-item">Смотеть новинки</Link>
           <img src="/img/arrow-right.svg" alt="Arrow" />
         </p>
       </div>

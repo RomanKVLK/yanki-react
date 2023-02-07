@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './MakingOrder.module.scss';
 
 const MakingOrder = () => {
@@ -54,52 +55,70 @@ const MakingOrder = () => {
             <div>
               <input className={styles.inputPerson} type="text" placeholder="Город*" />
               <input className={styles.inputPerson} type="address" placeholder="Отделение почты*" />
-            </div>{' '}
+            </div>
           </div>
           <div>
-            <label>
-              <input type="radio" value="Полная предоплата через ЕРИП" />
-              <span>Полная предоплата через ЕРИП</span>
-            </label>
-            <label>
-              <input type="radio" value="Денежным переводом  Visa/MasterCard" />
-              <span>Денежным переводом Visa/MasterCard</span>
-            </label>
-            <label>
-              <input type="radio" value="Наложенным платежом в отделении Белпочты" />
-              <span>Наложенным платежом в отделении Белпочты</span>
-            </label>
+            <form className={styles.form}>
+              <label className={styles.labelBlock}>
+                <input type="radio" value="Полная предоплата через ЕРИП" />
+                <span>Полная предоплата через ЕРИП</span>
+              </label>
+              <label className={styles.labelBlock}>
+                <input type="radio" value="Денежным переводом  Visa/MasterCard" />
+                <span>Денежным переводом Visa/MasterCard</span>
+              </label>
+              <label className={styles.labelBlock}>
+                <input type="radio" value="Наложенным платежом в отделении Белпочты" />
+                <span>Наложенным платежом в отделении Белпочты</span>
+              </label>
+            </form>
           </div>
           <div>
             <h3>Использование бонусного счёта:</h3>
-            <input type="text" placeholder="Сумма списания бонусов*" />
+            <input
+              className={styles.inputBonus}
+              type="text"
+              placeholder="Сумма списания бонусов*"
+            />
           </div>
         </div>
         <div className={styles.wrapperOrder}>
-          <ul>
+          <ul className={styles.listLink}>
             <li>Войти в личный кабинет</li>
-            <li>УСЛОВИЯ ДОСТАВКИ</li>
-            <li>УСЛОВИЯ ОБМЕНА И ВОЗВРАТА</li>
-            <li>ИНФОРМАЦИЯ ОБ ОПЛАТЕ</li>
+            <li>
+              <Link to="/payment-and-delivery">УСЛОВИЯ ДОСТАВКИ</Link>
+            </li>
+            <li>
+              <Link to="/exchange-and-return">УСЛОВИЯ ОБМЕНА И ВОЗВРАТА</Link>
+            </li>
+            <li>
+              <Link to="/payment-and-delivery">ИНФОРМАЦИЯ ОБ ОПЛАТЕ</Link>
+            </li>
           </ul>
           <ul>
-            <li>
+            <li className={styles.wrapperScore}>
               <p>ДОСТАВКА:</p>
               <b>По тарифам перевозчика</b>
             </li>
-            <li>
+            <li className={styles.wrapperScore}>
               <p>БОНУСЫ:</p>
               <b>-69 р</b>
             </li>
-            <li>
+            <li className={styles.wrapperScore}>
               <p>ИТОГО:</p>
               <b>15250 грн</b>
             </li>
           </ul>
-          <button>ОФОРМИТЬ ЗАКАЗ</button>
-          <p>
-            Нажимая на кнопку «оплатить заказ», я принимаю условия публичной оферты и политики
-            конфиденциальности
+          <button className={styles.buttonOrder}>ОФОРМИТЬ ЗАКАЗ</button>
+          <p className={styles.orderDescription}>
+            Нажимая на кнопку «оплатить заказ», я принимаю условия{' '}
+            <span>
+              <Link to="/public-offer">публичной оферты</Link>
+            </span>{' '}
+            и{' '}
+            <span>
+              <Link>политики конфиденциальности</Link>
+            </span>
           </p>
         </div>
       </div>

@@ -1,0 +1,37 @@
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.itemBlock {
+    display: flex;
+}
+
+.imageColumn {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+        object-fit: cover;
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 3px 3px 3px #969696;
+            transition: all 0.2s ease-in-out;
+        }
+    }
+}
+
+.imageRow {
+    display: flex;
+
+}
+
+.mainImage {
+    width: 450px;
+    height: 540px;
+    margin-left: 10px;
+}

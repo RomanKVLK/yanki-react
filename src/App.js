@@ -2,7 +2,7 @@ import './App.css';
 
 import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
-import PageNotFound from './pages/PageNotFound.jsx';
+import PageNotFound from './pages/PagesNotFound/index.jsx';
 import MainPage from './pages/MainPage';
 import Cart from './pages/Cart';
 import AboutUs from './pages/AboutUs';
@@ -13,6 +13,7 @@ import Exchange from './pages/Exchange';
 import Payment from './pages/Payment';
 import Contacts from './pages/Contacts';
 import PublicOffer from './pages/PublicOffer';
+import FullItem from './pages/FullItem';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/payment-and-delivery" element={<Payment />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/public-offer" element={<PublicOffer />} />
+        <Route path="/full-item" element={<FullItem />} />
       </Routes>
 
       <Footer />
