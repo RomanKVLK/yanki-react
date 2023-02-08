@@ -76,9 +76,6 @@
 }
 
 .button {
-  background-image: url('../../../public/img/burger-icon.svg');
-  background-repeat: no-repeat;
-  background-position: center center;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -87,14 +84,17 @@
   margin-right: 100px;
 
   &:hover {
-    background-image: url('../../../public/img/burger-icon-hover.svg');
+    svg {
+      rect {
+        fill: #cca88a;
+      }
+    }
+    transform: scale(1.1);
+    transition: all 0.1s ease-in-out;
   }
 }
 
 .button_white {
-  background-image: url('../../../public/img/burger-icon-white.svg');
-  background-repeat: no-repeat;
-  background-position: center center;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -103,7 +103,13 @@
   margin-right: 100px;
 
   &:hover {
-    background-image: url('../../../public/img/burger-icon-hover.svg');
+    svg {
+      rect {
+        fill: #cca88a
+      }
+    }
+    transform: scale(1.1);
+    transition: all 0.1s ease-in-out;
   }
 }
 
@@ -121,4 +127,31 @@
 .wrapper {
   display: flex;
   align-items: center;
+}
+
+.nav__list__main__second {
+  display: flex;
+  list-style: none;
+  padding: 0 15px;
+  text-transform: uppercase;
+
+  li {
+    color: #e0bea2;
+    margin-right: 30px;
+    padding: 0;
+
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+
+    &:hover {
+      svg {
+        g {
+          path {
+            fill: #e0bea2;
+          }
+        }
+      }
+    }
+  }
 }
