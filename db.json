@@ -1,0 +1,15 @@
+[
+    {"id":"0",
+    "imageUrl1":"https://dodopizza.azureedge.net/static/Img/Products/f035c7f46c0844069722f2bb3ee9f113_584x584.jpeg",
+    "imageUrl2":"https://dodopizza.azureedge.net/static/Img/Products/f035c7f46c0844069722f2bb3ee9f113_584x584.jpeg",
+    "imageUrl3":"https://dodopizza.azureedge.net/static/Img/Products/f035c7f46c0844069722f2bb3ee9f113_584x584.jpeg",
+    "imageUrl4":"https://dodopizza.azureedge.net/static/Img/Products/f035c7f46c0844069722f2bb3ee9f113_584x584.jpeg",
+    "imageUrl5":"https://dodopizza.azureedge.net/static/Img/Products/f035c7f46c0844069722f2bb3ee9f113_584x584.jpeg",
+    "title":"Кремовое пальто",
+    "color":[0,1,2],
+    "sizes":["M","S","L","XL","XXL"],
+    "price":1560,
+    "category":1,
+    "new":true
+    }
+]
