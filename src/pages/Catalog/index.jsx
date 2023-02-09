@@ -1,9 +1,23 @@
 import React from 'react';
+
 import ProductItem from '../../components/ProductItem';
 import Categories from '../../components/Categories';
+// import Pagination from '../../components/Pagination';
 import styles from './Catalog.module.scss';
 
 const Catalog = () => {
+  const [product, setProduct] = React.useState([]);
+
+  React.useEffect(() => {
+    fetch('https://635eb78303d2d4d47af4dab0.mockapi.io/pizzas')
+      .then((res) => {
+        return res.json();
+      })
+      .then((arr) => {
+        setProduct(arr);
+      });
+  }, []);
+
   return (
     <main>
       <div className={styles.container}>
@@ -14,20 +28,12 @@ const Catalog = () => {
         <div className={styles.wrapper}>
           <Categories />
           <div className={styles.catalogBlock}>
-            <ProductItem />
-            <ProductItem />
-            <ProductItem />
-            <ProductItem />
-            <ProductItem />
-            <ProductItem />
-            <ProductItem />
-            <ProductItem />
-            <ProductItem />
-            <ProductItem />
-            <ProductItem />
-            <ProductItem />
+            {product.map((obj) => (
+              <ProductItem key={obj.id} {...obj} />
+            ))}
           </div>
         </div>
+        {/* <Pagination /> */}
       </div>
     </main>
   );
