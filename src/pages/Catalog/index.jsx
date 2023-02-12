@@ -9,7 +9,7 @@ const Catalog = () => {
   const [product, setProduct] = React.useState([]);
 
   React.useEffect(() => {
-    fetch('https://635eb78303d2d4d47af4dab0.mockapi.io/pizzas')
+    fetch('https://63e903085f3e35d898f94b79.mockapi.io/items')
       .then((res) => {
         return res.json();
       })
@@ -18,12 +18,14 @@ const Catalog = () => {
       });
   }, []);
 
+  console.log(product);
+
   return (
     <main>
       <div className={styles.container}>
         <div className={styles.pagination}>
-          Главная <img src="/img/little-arrow.svg" alt="Arrow" /> Каталог
-          <img src="/img/little-arrow.svg" alt="Arrow" />
+          Главная <img src='/img/little-arrow.svg' alt='Arrow' /> Каталог
+          <img src='/img/little-arrow.svg' alt='Arrow' />
         </div>
         <div className={styles.wrapper}>
           <Categories />

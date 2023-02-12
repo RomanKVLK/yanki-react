@@ -1,15 +1,56 @@
 [
-    {"id":"0",
-    "imageUrl1":"https://dodopizza.azureedge.net/static/Img/Products/f035c7f46c0844069722f2bb3ee9f113_584x584.jpeg",
-    "imageUrl2":"https://dodopizza.azureedge.net/static/Img/Products/f035c7f46c0844069722f2bb3ee9f113_584x584.jpeg",
-    "imageUrl3":"https://dodopizza.azureedge.net/static/Img/Products/f035c7f46c0844069722f2bb3ee9f113_584x584.jpeg",
-    "imageUrl4":"https://dodopizza.azureedge.net/static/Img/Products/f035c7f46c0844069722f2bb3ee9f113_584x584.jpeg",
-    "imageUrl5":"https://dodopizza.azureedge.net/static/Img/Products/f035c7f46c0844069722f2bb3ee9f113_584x584.jpeg",
-    "title":"Кремовое пальто",
-    "color":[0,1,2],
-    "sizes":["M","S","L","XL","XXL"],
-    "price":1560,
-    "category":1,
-    "new":true
-    }
+  {
+    "id": "0",
+    "imageUrl": [
+      "img/contentImg/Coats/Beautiful&Free/Beautiful&Free-1.jpg",
+      "img/contentImg/Coats/Beautiful&Free/Beautiful&Free-2.jpg",
+      "img/contentImg/Coats/Beautiful&Free/Beautiful&Free-3.jpg",
+      "img/contentImg/Coats/Beautiful&Free/Beautiful&Free-4.jpg",
+      "img/contentImg/Coats/Beautiful&Free/Beautiful&Free-5.jpg"
+    ],
+    "title": "Пальто Beautiful&Free карамель",
+    "color": "Карамель",
+    "sizes": ["48"],
+    "price": "283,52",
+    "category": 2,
+    "new": true,
+    "structure": "п/э 100%",
+    "description": "Пальто женское, зимнее, из гладкокрашеной полиэфирной ткани, с наполнителем холлофайбер, рассчитано на температуру от -20 до-30. Изделия из данного материала способны прослужить своему владельцу достаточно длительное время. В особенно холодные месяцы такой наполнитель будет отлично удерживать тепло. Пальто прямого, свободного силуэта, базового классического кроя, длиной ниже уровня колена (в зависимости от роста потребителя). Передняя часть пальто с двумя декоративными подрезами и двумя накладными, функциональными карманами. Застежка встык на разъемную тесьму «молния» с двумя бегунками и ветрозащитной планкой снаружи, которая дополнительно фиксируется на потайные кнопки. Застежка-молния имеет длину верхнего края капюшона до линии колена (в зависимости от роста потребителя). Спинка цельнокроеная. Рукав двухшовный, втачной, длинный. Во внутреннюю, нижнюю часть рукава вставлена дополнительная манжета из трикотажа. Капюшон с отрезной центральной частью, притачной по линии горловины. Подкладка гладкая, однотонная, имеет дополнительный внутренний накладной карман."
+  },
+  {
+    "id": "1",
+    "imageUrl": [
+      "img/contentImg/Coats/BelElleStyle/BelElle-1.jpg",
+      "img/contentImg/Coats/BelElleStyle/BelElle-2.jpg",
+      "img/contentImg/Coats/BelElleStyle/BelElle-3.jpg",
+      "img/contentImg/Coats/BelElleStyle/BelElle-4.jpg",
+      "img/contentImg/Coats/BelElleStyle/BelElle-5.jpg"
+    ],
+    "title": "Пальто БелЭльСтиль 786 бело-черная клетка",
+    "color": "Бело-черная клетка",
+    "sizes": ["58"],
+    "price": "181,30",
+    "category": 2,
+    "new": false,
+    "structure": "шерсть 20%, ПА 5%,ПЭ 7%,ПАН 68%",
+    "description": "Женское пальто, на подкладке, прямого силуэта, с отрезной стойкой. Застежка центральная на петли и пуговицы. По переду прорезные карманы с втачной листочкой. Спинка цельная. Рукав втачной, двухшовный. Длина рукава 63 см, длина по спинке 96 см."
+  },
+  {
+    "id": "2",
+    "imageUrl": [
+      "img/contentImg/Coats/Mehoff/Mehoff-1.jpg",
+      "img/contentImg/Coats/Mehoff/Mehoff-2.jpg",
+      "img/contentImg/Coats/Mehoff/Mehoff-3.jpg",
+      "img/contentImg/Coats/Mehoff/Mehoff-4.jpg",
+      "img/contentImg/Coats/Mehoff/Mehoff-5.jpg"
+    ],
+    "title": "Пальто Мехофф Ксения",
+    "color": "Рыжий",
+    "sizes": ["44", "46", "48", "50"],
+    "price": "711",
+    "category": 2,
+    "new": true,
+    "structure": "Пальтовый трикотаж, лиса натуральная рыжая",
+    "description": "Куртка Ксения 70 02-56р . Укороченное пальто свободного силуэта под пояс. Длина - 70 см. Модель с красивым капюшоном из рыжей лисы, росшитым кожей. Мех несъемный. Рукав реглан со спущенной линией плеча и отворотной манжетой. Изделие с застежкой на кнопки и накладными карманами."
+  }
 ]
