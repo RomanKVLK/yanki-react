@@ -1,18 +1,17 @@
 import React from 'react';
 import styles from './Search.module.scss';
 
-const Search = ({ onSearchClose }) => {
+const Search = () => {
   const [searchValue, setSearchValue] = React.useState('');
-
+  console.log(searchValue);
   return (
     <div>
       <input
         className={styles.searchInput}
         value={searchValue}
         onChange={(e) => setSearchValue(e.target.value)}
-        placeholder="Поиск..."
+        placeholder='Поиск...'
       />
-      <button onClick={() => onSearchClose()}>x</button>
     </div>
   );
 };
