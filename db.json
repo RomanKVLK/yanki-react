@@ -52,5 +52,257 @@
     "new": true,
     "structure": "Пальтовый трикотаж, лиса натуральная рыжая",
     "description": "Куртка Ксения 70 02-56р . Укороченное пальто свободного силуэта под пояс. Длина - 70 см. Модель с красивым капюшоном из рыжей лисы, росшитым кожей. Мех несъемный. Рукав реглан со спущенной линией плеча и отворотной манжетой. Изделие с застежкой на кнопки и накладными карманами."
+  },
+  {
+    "id": "3",
+    "imageUrl": [
+      "img/contentImg/Coats/MisLana/MisLana-1.jpg",
+      "img/contentImg/Coats/MisLana/MisLana-2.jpg",
+      "img/contentImg/Coats/MisLana/MisLana-3.jpg",
+      "img/contentImg/Coats/MisLana/MisLana-4.jpg",
+      "img/contentImg/Coats/MisLana/MisLana-5.jpg"
+    ],
+    "title": "Пальто MisLana 7211 серо-бежевый",
+    "color": "серо-бежевый",
+    "sizes": ["48", "50"],
+    "price": "318,35",
+    "category": 2,
+    "new": false,
+    "structure": "100% пэ",
+    "description": "Пальто женское утеплённое осень-зима прямого силуэта с капюшоном, выполнено из стёганной ткани на утеплителе изософт, комбинированное. Нижняя часть пальто из ткани с мелкими крапинами. По переду большие накладные карманы с двумя входами, верхний закрыт клапаном на кнопки. Воротник стойка. Рукава одно шовные втачные. Боковые швы заканчиваются разрезами, которые застёгиваются на кнопки. Подкладка дополнительно простёгана с утеплителем изософт."
+  },
+  {
+    "id": "4",
+    "imageUrl": [
+      "img/contentImg/Costumes/ElleStyle/ElleStyle-1.jpg",
+      "img/contentImg/Costumes/ElleStyle/ElleStyle-2.jpg",
+      "img/contentImg/Costumes/ElleStyle/ElleStyle-3.jpg",
+      "img/contentImg/Costumes/ElleStyle/ElleStyle-4.jpg",
+      "img/contentImg/Costumes/ElleStyle/ElleStyle-5.jpg"
+    ],
+    "title": "Костюм/комплект БелЭльСтиль 203+586 голубая клетка",
+    "color": "голубая клетка",
+    "sizes": ["46","48","50"],
+    "price": "238,68",
+    "category": 4,
+    "new": true,
+    "structure": "хлопок 60%, ПЭ 37%, эластан 3%",
+    "description": "Комплект 2-х предметный состоит из жакета и и брюк. Жакет женский удлиненный, полуприлегающего силуэта с центральной бортовой застежкой на пуговицы до линии перегиба лацкана. Спереди рельефные швы от плечевого шва,отрезной бочок и карман с клапаном. Спинка с рельефами от плечевого шва. Рукав втачной, двухшовный, 3/4, с небольшим разрезом в локтевом шве. Воротник пиджачного типа. Жакет выполнен из х/б ткани. Перед жакета на подкладке. Длина рукава 50, длина по спинке 68 см. Классические брюки, прямые, слегка заужены к низу,заутюжены стрелки,по переду обработаны карманы с отрезным бочком,застежка на тесьму-молнию и 1 пуговицу.На задних половинках обработаны вытачки и имитация карманов в рамку с двумя обтачками,пояс в брюках притачной. По низу брюк в боковом шве есть небольшой разрез. Длина брюк от талии по боковому шву 93 см."
+  },
+  {
+    "id": "5",
+    "imageUrl": [
+      "img/contentImg/Costumes/FoxyFox/FoxyFox-1.jpg",
+      "img/contentImg/Costumes/FoxyFox/FoxyFox-2.jpg",
+      "img/contentImg/Costumes/FoxyFox/FoxyFox-3.jpg",
+      "img/contentImg/Costumes/FoxyFox/FoxyFox-4.jpg",
+      "img/contentImg/Costumes/FoxyFox/FoxyFox-5.jpg"
+    ],
+    "title": "Костюм/комплект FOXY FOX 1422 серый",
+    "color": "серый",
+    "sizes": ["46","48"],
+    "price": "210,70",
+    "category": 4,
+    "new": false,
+    "structure": "Вискоза 77%, ангора 15%, эластан 8%",
+    "description": "Комплект из мягкого трикотажного полотна с люрексовой нитью, которая придает небольшой блеск. Комплект состоит из джемпера и юбки полуприлегающего силуэта. Джемпер с цельнокроеным воротником- стойкой, на рукавах декоративная капелька. Юбка прямого силуэта, зауженная к низу, шлица по среднему шву, пояс на резинке."
+  },
+  {
+    "id": "6",
+    "imageUrl": [
+      "img/contentImg/Costumes/Lisanna/Lisanna-1.jpg",
+      "img/contentImg/Costumes/Lisanna/Lisanna-2.jpg",
+      "img/contentImg/Costumes/Lisanna/Lisanna-3.jpg",
+      "img/contentImg/Costumes/Lisanna/Lisanna-4.jpg",
+      "img/contentImg/Costumes/Lisanna/Lisanna-5.jpg"
+    ],
+    "title": "Костюм/комплект FOXY FOX 1422 серый",
+    "color": "серый",
+    "sizes": ["46","48"],
+    "price": "210,70",
+    "category": 4,
+    "new": false,
+    "structure": "Вискоза 77%, ангора 15%, эластан 8%",
+    "description": "Комплект из мягкого трикотажного полотна с люрексовой нитью, которая придает небольшой блеск. Комплект состоит из джемпера и юбки полуприлегающего силуэта. Джемпер с цельнокроеным воротником- стойкой, на рукавах декоративная капелька. Юбка прямого силуэта, зауженная к низу, шлица по среднему шву, пояс на резинке."
+  },
+  {
+    "id": "7",
+    "imageUrl": [
+      "img/contentImg/Costumes/Lisanna/Lisanna-1.jpg",
+      "img/contentImg/Costumes/Lisanna/Lisanna-2.jpg",
+      "img/contentImg/Costumes/Lisanna/Lisanna-3.jpg",
+      "img/contentImg/Costumes/Lisanna/Lisanna-4.jpg",
+      "img/contentImg/Costumes/Lisanna/Lisanna-5.jpg"
+    ],
+    "title": "Костюм/комплект Lissana 4328 тройка нефритовый",
+    "color": "нефритовый",
+    "sizes": ["44","46","48"],
+    "price": "198",
+    "category": 4,
+    "new": true,
+    "structure": "пэ65% виск32% эл3%; блуза:виск92%эл8%",
+    "description": "Костюм брючный. Жакет со стояче-отложным воротником пиджачного типа и центральной застёжкой на петлю и пуговицу. Перед с карманами с клапанами в нижней части. Спинка со средним швом и двумя рельефами. Рукава втачные, с декоративными пуговицами по низу. Жакет на подкладке. Блуза с фигурным вырезом горловины. Рукава втачные. Брюки на притачном поясе."
+  },
+  {
+    "id": "8",
+    "imageUrl": [
+      "img/contentImg/Costumes/MichelleStyle/MichelleStyle-1.jpg",
+      "img/contentImg/Costumes/MichelleStyle/MichelleStyle-2.jpg",
+      "img/contentImg/Costumes/MichelleStyle/MichelleStyle-3.jpg",
+      "img/contentImg/Costumes/MichelleStyle/MichelleStyle-4.jpg",
+      "img/contentImg/Costumes/MichelleStyle/MichelleStyle-5.jpg"
+    ],
+    "title": "Костюм/комплект Мишель Стиль 1024-1 розово-коралловый двойка",
+    "color": "розово-коралловый",
+    "sizes": ["42","44","46"],
+    "price": "255,60",
+    "category": 4,
+    "new": true,
+    "structure": "Вискоза 51%, ПЭ 46%, лайкра 3%",
+    "description": "Костюм состоит из жакета и брюк. Жакет на подкладке с прорезными функциональными карманами по переду и застежкой на 2-е петли и пуговицы. Рукав втачной двухшовный со шлицей декорированной пуговицами. Брюки прямые от линии калена с застежкой в боковом шве на потайную молнию. В комплект входит пояс с пряжкой."
+  },
+  {
+    "id": "9",
+    "imageUrl": [
+      "img/contentImg/Costumes/Vilena/Vilena-1.jpg",
+      "img/contentImg/Costumes/Vilena/Vilena-2.jpg",
+      "img/contentImg/Costumes/Vilena/Vilena-3.jpg",
+      "img/contentImg/Costumes/Vilena/Vilena-4.jpg",
+      "img/contentImg/Costumes/Vilena/Vilena-5.jpg"
+    ],
+    "title": "Костюм/комплект Vilena Fashion 843 двойка красный",
+    "color": "красный",
+    "sizes": ["44","46","48"],
+    "price": "260,36",
+    "category": 4,
+    "new": false,
+    "structure": "Полиэстер - 64%, вискоза - 32%, спандекс - 4%",
+    "description": "Элегантный женский 2-х предметный костюм состоит из жакета на подкладке и брюк. Жакет с однобортной застежкой на 1 петлю и 1 пуговицу. Перед с рельефными швами от проймы до низа и талиевыми вытачками, входящими в прорезной карман в рамку. Спинка со средним швом и рельефными швами от проймы до низа. Рукав втачной двухшовный с открытой шлицей в локтевом шве, длинный. Жакет с отрезными лацканами и воротником с прямыми углами. Брюки слегка заужены к низу, с карманами, наклонными к боковым швам, с притачным поясом, с застежкой на тесьму-молнию в среднем шве передних половинок брюк. Передние и задние половинки с заутюженными кантами."
+  },
+  {
+    "id": "10",
+    "imageUrl": [
+      "img/contentImg/Jackets/Barbara-146/Barbara-1.jpg",
+      "img/contentImg/Jackets/Barbara-146/Barbara-2.jpg",
+      "img/contentImg/Jackets/Barbara-146/Barbara-3.jpg",
+      "img/contentImg/Jackets/Barbara-146/Barbara-4.jpg",
+      "img/contentImg/Jackets/Barbara-146/Barbara-5.jpg"
+    ],
+    "title": "Куртка BARBARA 146 бежевый",
+    "color": "бежевый",
+    "sizes": ["44","46","48","50"],
+    "price": "316,26",
+    "category": 2,
+    "new": true,
+    "structure": "полиэстер 100%, плащевая ткань, утеплитель изософт 200",
+    "description": "Удлиненная женская куртка из стеганной плащевой ткани на утеплителе изософт 200 (подходит на температуру до -10 градусов). Куртка на подкладке. Рукава втачные, по низу рукава пата-манжет. Застежка центральная на притачных планках, на петли и пуговицы. Воротник рубашечный. По полочкам накладные карманы с клапаном. Край планки, низ рукавов, пата, воротник, карманы и клапаны окантованы декоративной тесьмой."
+  },
+  {
+    "id": "11",
+    "imageUrl": [
+      "img/contentImg/Jackets/EOLA-2352/EOLA-1.jpg",
+      "img/contentImg/Jackets/EOLA-2352/EOLA-2.jpg",
+      "img/contentImg/Jackets/EOLA-2352/EOLA-3.jpg",
+      "img/contentImg/Jackets/EOLA-2352/EOLA-4.jpg",
+      "img/contentImg/Jackets/EOLA-2352/EOLA-5.jpg"
+    ],
+    "title": "Куртка EOLA 2352 оранжевый",
+    "color": "оранжевый",
+    "sizes": ["44","46","48","50","52","54"],
+    "price": "438,09",
+    "category": 2,
+    "new": false,
+    "structure": "ПЭ - 100% Подкладка: ПЭ - 55%, Вис - 45%",
+    "description": "Куртка выполнена из плащевой ткани, простеганной с синтепоном. Куртка прямого силуэта, длиной до линии бедер. Спереди застежка на молнию и планку с пробивными кнопками, и прорезные карманы с листочкой. На спинке кокетка с декоративной печатью ANGEL. Плечевой шов спущен. Воротник-стойка. Рукав покроя реглан, одношовный, с плечевой вытачкой. Низ рукава на манжете с эластичной тесьмой. Длина куртки по спинке - 67,5 см. Длина рукава: р.44-48 - 74 см, р.50-54 - 75,5 см."
+  },
+  {
+    "id": "12",
+    "imageUrl": [
+      "img/contentImg/Jackets/LadySecret-6357/LadySecret-1.jpg",
+      "img/contentImg/Jackets/LadySecret-6357/LadySecret-2.jpg",
+      "img/contentImg/Jackets/LadySecret-6357/LadySecret-3.jpg",
+      "img/contentImg/Jackets/LadySecret-6357/LadySecret-4.jpg",
+      "img/contentImg/Jackets/LadySecret-6357/LadySecret-5.jpg"
+    ],
+    "title": "Куртка Lady Secret 6357 пудра",
+    "color": "пудра",
+    "sizes": ["50","52","54"],
+    "price": "510",
+    "category": 2,
+    "new": true,
+    "structure": "ПЭ 100%",
+    "description": "Демисезонная стеганая куртка с капюшоном на молнии, рукав втачной , по полочкам прорезные карманы с листочкой. По низу эластичный пояс. Утеплитель FeelGood 150г./метр кв., подкладка барьер, температурный режим от +5 до -5"
+  },
+  {
+    "id": "13",
+    "imageUrl": [
+      "img/contentImg/Jackets/Luche-3181/Luche-1.jpg",
+      "img/contentImg/Jackets/Luche-3181/Luche-2.jpg",
+      "img/contentImg/Jackets/Luche-3181/Luche-3.jpg",
+      "img/contentImg/Jackets/Luche-3181/Luche-4.jpg",
+      "img/contentImg/Jackets/Luche-3181/Luche-5.jpg"
+    ],
+    "title": "Куртка Люше 3181",
+    "color": "шоколад",
+    "sizes": ["48"],
+    "price": "184,16",
+    "category": 2,
+    "new": false,
+    "structure": "70% п/э, 30% хлопок",
+    "description": "Стильный жакет из экокожи прямого силуэта. Воротник отложной с лацканами, со смещенной бортовой застежкой на молнию. На плечах паты на кнопке. По переду обработаны карманы с декоративным клапаном. По спинке и переду рельефы. На спинке кокетка. Жакет частично на подкладке (спинка и перед)."
+  },
+  {
+    "id": "14",
+    "imageUrl": [
+      "img/contentImg/Jackets/MisLana-212/MisLana-1.jpg",
+      "img/contentImg/Jackets/MisLana-212/MisLana-2.jpg",
+      "img/contentImg/Jackets/MisLana-212/MisLana-3.jpg",
+      "img/contentImg/Jackets/MisLana-212/MisLana-4.jpg",
+      "img/contentImg/Jackets/MisLana-212/MisLana-5.jpg"
+    ],
+    "title": "Куртка MisLana 212 серо-синий",
+    "color": "серо-синий",
+    "sizes": ["48","50","52","54","56","58"],
+    "price": "210,04",
+    "category": 2,
+    "new": true,
+    "structure": "п/э 65%, хлопок 23%, вискоза 9%, спандекс 3%",
+    "description": "Куртка женская на подкладке со спущенным плечом, выполнена из джинсовой ткани. По переду притачная планка, прорезные карманы с листочкой и застёжка на металлическую тесьму молнию и кнопки. По спинке кокетка . Рукава одно шовные втачные . Воротник стойка. Украшают куртку отделочные строчки контрастного цвета, паты , декоративные нашивки и печать"
+  },
+  {
+    "id": "15",
+    "imageUrl": [
+      "img/contentImg/Jumpers/Buter/Buter-1.jpg",
+      "img/contentImg/Jumpers/Buter/Buter-2.jpg",
+      "img/contentImg/Jumpers/Buter/Buter-3.jpg",
+      "img/contentImg/Jumpers/Buter/Buter-4.jpg",
+      "img/contentImg/Jumpers/Buter/Buter-5.jpg"
+    ],
+    "title": "Джемпер (кофта) Buter 2551 Бежевый",
+    "color": "Бежевый",
+    "sizes": ["42","44","46","48"],
+    "price": "210,04",
+    "category": 6,
+    "new": true,
+    "structure": "88% хлопок, 12% ПЭ",
+    "description": "Джемпер укороченный, с капюшоном, на резинке по низу изделия, прямого силуэта. С втачным рукавом, внизу на манжете. Джемпер с печатью BUTER на полочке."
+  },
+  {
+    "id": "16",
+    "imageUrl": [
+      "img/contentImg/Jumpers/Kivviwear/Kivviwear-1.jpg",
+      "img/contentImg/Jumpers/Kivviwear/Kivviwear-2.jpg",
+      "img/contentImg/Jumpers/Kivviwear/Kivviwear-3.jpg",
+      "img/contentImg/Jumpers/Kivviwear/Kivviwear-4.jpg",
+      "img/contentImg/Jumpers/Kivviwear/Kivviwear-5.jpg"
+    ],
+    "title": "Джемпер (кофта) Kivviwear 4055",
+    "color": "Белый",
+    "sizes": ["42","44","46","48","50","52"],
+    "price": "107,01",
+    "category": 6,
+    "new": false,
+    "structure": "70% хлопок, 26% полиэстер, 4% эластан",
+    "description": "Худи Classic, утепленная на флисе с нанесением принта, модели 4055 с капюшоном на подкладке из основной ткани, с карманами в боковых швах. Ткань футер (3-х ниточный) с внутренним слоем утепленным начесом, качество Пенье, плотность 395 г.м2."
   }
 ]

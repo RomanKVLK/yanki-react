@@ -2,16 +2,7 @@ import React from 'react';
 import styles from './Categories.module.scss';
 
 const Categories = () => {
-  const categories = [
-    'Все',
-    'New',
-    'Куртки',
-    'Пальто',
-    'Плащи',
-    'Костюмы',
-    'Джемперы',
-    'Аксессуары',
-  ];
+  const categories = ['Все', 'New', 'Куртки', 'Пальто', 'Плащи', 'Костюмы', 'Джемперы'];
   const [categoryId, setCategoryName] = React.useState(0);
 
   const clickCategoryName = (index) => {
