@@ -4,6 +4,7 @@ import ProductItem from '../../components/ProductItem';
 import Categories from '../../components/Categories';
 // import Pagination from '../../components/Pagination';
 import styles from './Catalog.module.scss';
+import { Link } from 'react-router-dom';
 
 const Catalog = () => {
   const [product, setProduct] = React.useState([]);
@@ -24,14 +25,16 @@ const Catalog = () => {
     <main>
       <div className={styles.container}>
         <div className={styles.pagination}>
-          Главная <img src='/img/little-arrow.svg' alt='Arrow' /> Каталог
-          <img src='/img/little-arrow.svg' alt='Arrow' />
+          Главная <img src="/img/little-arrow.svg" alt="Arrow" /> Каталог
+          <img src="/img/little-arrow.svg" alt="Arrow" />
         </div>
         <div className={styles.wrapper}>
           <Categories />
           <div className={styles.catalogBlock}>
             {product.map((obj) => (
-              <ProductItem key={obj.id} {...obj} />
+              <Link to="/full-item/:id">
+                <ProductItem key={obj.id} {...obj} />
+              </Link>
             ))}
           </div>
         </div>

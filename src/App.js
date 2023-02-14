@@ -18,21 +18,21 @@ import FullItem from './pages/FullItem';
 
 function App() {
   return (
-    <div className='App'>
+    <div className="App">
       <Header />
 
       <Routes>
-        <Route path='/' element={<MainPage />} />
-        <Route path='/*' element={<PageNotFound />} />
-        <Route path='/cart' element={<Cart />} />
-        <Route path='/about-us' element={<AboutUs />} />
-        <Route path='/favorites' element={<Favorites />} />
-        <Route path='/catalog' element={<Catalog />} />
-        <Route path='/exchange-and-return' element={<Exchange />} />
-        <Route path='/payment-and-delivery' element={<Payment />} />
-        <Route path='/contacts' element={<Contacts />} />
-        <Route path='/public-offer' element={<PublicOffer />} />
-        <Route path='/full-item' element={<FullItem />} />
+        <Route path="/" element={<MainPage />} />
+        <Route path="/*" element={<PageNotFound />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/favorites" element={<Favorites />} />
+        <Route path="/catalog" element={<Catalog />} />
+        <Route path="/exchange-and-return" element={<Exchange />} />
+        <Route path="/payment-and-delivery" element={<Payment />} />
+        <Route path="/contacts" element={<Contacts />} />
+        <Route path="/public-offer" element={<PublicOffer />} />
+        <Route path="/full-item/:id" element={<FullItem />} />
       </Routes>
 
       <Footer />
