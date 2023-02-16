@@ -3,12 +3,26 @@
   position: relative;
   width: 310px;
   object-fit: cover;
+  border: 1px solid #e0bea2;
+  border-radius: 20px;
+
+  &:hover {
+    border: 1px solid #cca88a;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 10px #969696;
+    transition: all 0.3s ease-out;
+  }
 
   h2 {
     text-align: center;
     font-size: 16px;
     line-height: 19px;
     font-weight: normal;
+    height: 28px;
+  }
+
+  img {
+    border-radius: 20px;
   }
 
   span {
@@ -20,15 +34,32 @@
   }
 }
 
+.sizesBox {
+  text-align: center;
+  margin: 10px 10px;
+  display: flex;
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e0bea2;
+    border-radius: 10px;
+    margin-right: 5px;
+  }
+}
+
 .favorites {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 10px;
+  top: 10px;
   background-color: #e0bea2;
   border: none;
   width: 40px;
   height: 40px;
-  border-bottom-left-radius: 50%;
+  border-radius: 10px;
 
   &:hover {
     background-color: #e0bea2;

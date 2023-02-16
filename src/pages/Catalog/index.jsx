@@ -19,8 +19,6 @@ const Catalog = () => {
       });
   }, []);
 
-  console.log(product);
-
   return (
     <main>
       <div className={styles.container}>
@@ -32,7 +30,7 @@ const Catalog = () => {
           <Categories />
           <div className={styles.catalogBlock}>
             {product.map((obj) => (
-              <Link to="/full-item/:id">
+              <Link to={`/full-item/${obj.id}`}>
                 <ProductItem key={obj.id} {...obj} />
               </Link>
             ))}

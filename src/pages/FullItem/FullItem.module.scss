@@ -14,14 +14,15 @@
 }
 
 .imageColumn {
+    height: 675px;
     display: flex;
     flex-direction: column;
 
     img {
-        width: 100px;
-        height: 100px;
+        width: 85px;
+        height: 127px;
         margin-bottom: 10px;
-        object-fit: cover;
+        object-fit: scale-down;
 
         &:hover {
             transform: scale(1.1);
@@ -38,7 +39,7 @@
 
 .mainImage {
     width: 450px;
-    height: 540px;
+    height: 675px;
     margin-left: 10px;
 }
 

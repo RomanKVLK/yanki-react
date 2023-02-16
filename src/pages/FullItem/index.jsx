@@ -1,41 +1,62 @@
 import React from 'react';
 import styles from './FullItem.module.scss';
+import { useParams, useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const FullItem = () => {
+  const { id } = useParams();
+  const [fullProduct, setFullProduct] = React.useState();
+  const [fullImage, setFullImage] = React.useState(0);
+  const navigate = useNavigate();
+
+  React.useEffect(() => {
+    async function fetchProduct() {
+      try {
+        const { data } = await axios.get('https://63e903085f3e35d898f94b79.mockapi.io/items/' + id);
+        console.log(data);
+        setFullProduct(data);
+      } catch (error) {
+        alert('Ошибка при получении продукта');
+        navigate('/');
+      }
+    }
+
+    fetchProduct();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [id]);
+
+  if (!fullProduct) {
+    return 'Загрузка...';
+  }
+
   return (
     <main>
       <div className={styles.container}>
         <div className={styles.pagination}>
           Главная <img src="/img/little-arrow.svg" alt="Arrow" /> Каталог{' '}
           <img src="/img/little-arrow.svg" alt="Arrow" /> Пальто{' '}
-          <img src="/img/little-arrow.svg" alt="Arrow" /> Кремовое Пальто
+          <img src="/img/little-arrow.svg" alt="Arrow" /> {fullProduct.title}
         </div>
         <div className={styles.itemBlock}>
           <div className={styles.imageRow}>
             <div className={styles.imageColumn}>
-              <img src="/img/contentImg/CreamCoat/creamcoat1.jpg" alt="CreamCoat" />
-              <img src="/img/contentImg/CreamCoat/creamcoat2.jpg" alt="CreamCoat" />
-              <img src="/img/contentImg/CreamCoat/creamcoat3.jpg" alt="CreamCoat" />
-              <img src="/img/contentImg/CreamCoat/creamcoat4.jpg" alt="CreamCoat" />
-              <img src="/img/contentImg/CreamCoat/creamcoat5.jpg" alt="CreamCoat" />
+              {fullProduct.imageUrl.map((imageSrc, i) => (
+                <img onClick={() => setFullImage(i)} key={i} src={`/${imageSrc}`} alt="CreamCoat" />
+              ))}
             </div>
             <img
               className={styles.mainImage}
-              src="/img/contentImg/CreamCoat/creamcoat6.jpg"
+              src={`/${fullProduct.imageUrl[fullImage]}`}
               alt="CreamCoat"
             />
           </div>
           <div className={styles.infoBlock}>
-            <h2 className={styles.infoTitle}>Кремовое пальто</h2>
-            <b>3150 p</b>
-            <div>color</div>
-            <select className={styles.cartSelect}>
-              <option value="S">S</option>
-              <option value="M">M</option>
-              <option value="L">L</option>
-              <option value="XL">XL</option>
-              <option value="XXL">XXL</option>
-            </select>
+            <h2 className={styles.infoTitle}>{fullProduct.title}</h2>
+            <b>{fullProduct.price} BYN</b>
+            <div>{fullProduct.color}</div>
+            {fullProduct.sizes.map((productSize, i) => (
+              <div key={i}>{productSize}</div>
+            ))}
             <div className={styles.buttonsBox}>
               <button className={styles.toCart}>В корзину</button>
               <button className={styles.toFavorites}>
@@ -57,16 +78,11 @@ const FullItem = () => {
               <h3>Подробности</h3>
               <button>Обмеры и описание</button>
               <div>
-                Состав: 50% Шерсть, 50% Полиэстер Подкладка: 100% Полиэстер Утеплитель: 90% Пух, 10%
-                Перо - Не стирать - Гладить при температуре утюга до 110°C - Не отбеливать - Сухая
-                чистка (химчистка) - Барабанная сушка запрещена
+                Состав: {fullProduct.structure} - Не стирать - Гладить при температуре утюга до
+                110°C - Не отбеливать - Сухая чистка (химчистка) - Барабанная сушка запрещена
               </div>
               <button>Состав и уход</button>
-              <div>
-                Состав: 50% Шерсть, 50% Полиэстер Подкладка: 100% Полиэстер Утеплитель: 90% Пух, 10%
-                Перо - Не стирать - Гладить при температуре утюга до 110°C - Не отбеливать - Сухая
-                чистка (химчистка) - Барабанная сушка запрещена
-              </div>
+              <div>{fullProduct.description}</div>
             </div>
           </div>
         </div>
