@@ -10,11 +10,14 @@ const ProductItem = ({ imageUrl, title, price, sizes, color }) => {
       <h2>{title}</h2>
       <b>{price} BYN</b>
       <p>{color}</p>
-      <ul className={styles.sizesBox}>
-        {sizes.map((size, i) => (
-          <li key={i}>{size}</li>
-        ))}
-      </ul>
+      <div className={styles.sizesItemBox}>
+        <p>Размеры:</p>
+        <ul className={styles.sizesBox}>
+          {sizes.map((size, i) => (
+            <li key={i}>{size}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };

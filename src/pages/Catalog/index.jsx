@@ -1,23 +1,50 @@
 import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import qs from 'qs';
 
 import ProductItem from '../../components/ProductItem';
 import Categories from '../../components/Categories';
-// import Pagination from '../../components/Pagination';
+import Pagination from '../../components/Pagination';
 import styles from './Catalog.module.scss';
-import { Link } from 'react-router-dom';
+
+import { setCategoryId } from '../../redux/slices/filter/filterSlice';
+import { fetchProduct } from '../../redux/slices/product/asyncActions';
 
 const Catalog = () => {
-  const [product, setProduct] = React.useState([]);
+  const [currentPage, setCurrentPage] = React.useState(1);
+  const categoryId = useSelector((state) => state.filter.categoryId);
+  // const searchValue = useSelector((state) => state.filter.searchValue);
+  const items = useSelector((state) => state.product.items);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  // const search = searchValue ? `&search=${searchValue}` : '';
+
+  const onChangeCategory = (id) => {
+    dispatch(setCategoryId(id));
+  };
+
+  const getProduct = async () => {
+    dispatch(
+      fetchProduct({
+        currentPage,
+        categoryId,
+      }),
+    );
+  };
 
   React.useEffect(() => {
-    fetch('https://63e903085f3e35d898f94b79.mockapi.io/items')
-      .then((res) => {
-        return res.json();
-      })
-      .then((arr) => {
-        setProduct(arr);
-      });
-  }, []);
+    getProduct();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentPage, categoryId]);
+
+  React.useEffect(() => {
+    const queryString = qs.stringify({
+      categoryId,
+      currentPage,
+    });
+    navigate(`?${queryString}`);
+  }, [categoryId, currentPage, navigate]);
 
   return (
     <main>
@@ -27,16 +54,16 @@ const Catalog = () => {
           <img src="/img/little-arrow.svg" alt="Arrow" />
         </div>
         <div className={styles.wrapper}>
-          <Categories />
+          <Categories value={categoryId} onChangeCategory={(i) => onChangeCategory(i)} />
           <div className={styles.catalogBlock}>
-            {product.map((obj) => (
+            {items.map((obj) => (
               <Link to={`/full-item/${obj.id}`}>
                 <ProductItem key={obj.id} {...obj} />
               </Link>
             ))}
           </div>
         </div>
-        {/* <Pagination /> */}
+        <Pagination onChangePage={(num) => setCurrentPage(num)} />
       </div>
     </main>
   );

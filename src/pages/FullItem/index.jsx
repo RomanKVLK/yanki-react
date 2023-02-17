@@ -13,7 +13,6 @@ const FullItem = () => {
     async function fetchProduct() {
       try {
         const { data } = await axios.get('https://63e903085f3e35d898f94b79.mockapi.io/items/' + id);
-        console.log(data);
         setFullProduct(data);
       } catch (error) {
         alert('Ошибка при получении продукта');

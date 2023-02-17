@@ -17,10 +17,11 @@ import PublicOffer from './pages/PublicOffer';
 import FullItem from './pages/FullItem';
 
 function App() {
+  const [searchValue, setSearchValue] = React.useState('');
+
   return (
     <div className="App">
-      <Header />
-
+      <Header searchValue={searchValue} setSearchValue={setSearchValue} />
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/*" element={<PageNotFound />} />
@@ -30,7 +31,10 @@ function App() {
         <Route path="/catalog" element={<Catalog />} />
         <Route path="/exchange-and-return" element={<Exchange />} />
         <Route path="/payment-and-delivery" element={<Payment />} />
-        <Route path="/contacts" element={<Contacts />} />
+        <Route
+          path="/contacts"
+          element={<Contacts searchValue={searchValue} setSearchValue={setSearchValue} />}
+        />
         <Route path="/public-offer" element={<PublicOffer />} />
         <Route path="/full-item/:id" element={<FullItem />} />
       </Routes>

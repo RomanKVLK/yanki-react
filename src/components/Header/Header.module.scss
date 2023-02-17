@@ -23,14 +23,21 @@
 
 .nav__list__main {
   display: flex;
+  align-items: center;
   list-style: none;
-  padding: 0 15px;
+  padding-right: 15px;
   text-transform: uppercase;
 
   li {
     color: #ffffff;
     margin-right: 30px;
     padding: 0;
+
+    svg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     &:nth-child(4) {
       margin-right: 0;
@@ -50,14 +57,22 @@
 
 .nav__list__other {
   display: flex;
+  align-items: center;
   list-style: none;
-  padding: 0 15px;
+  padding-right: 15px;
   text-transform: uppercase;
 
   li {
     color: #e0bea2;
     margin-right: 30px;
     padding: 0;
+
+      svg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
 
     &:nth-child(4) {
       margin-right: 0;
@@ -131,6 +146,7 @@
 
 .nav__list__main__second {
   display: flex;
+  align-items: center;
   list-style: none;
   padding: 0 15px;
   text-transform: uppercase;
@@ -154,4 +170,9 @@
       }
     }
   }
+}
+
+.inputSearchBox {
+  display: flex;
+  align-items: center;
 }

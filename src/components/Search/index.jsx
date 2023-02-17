@@ -1,18 +1,35 @@
 import React from 'react';
+// import debounce from 'lodash.debounce';
+// import { useDispatch } from 'react-redux';
+
 import styles from './Search.module.scss';
+// import { setSearchValue } from '../../redux/slices/filter/filterSlice';
 
 const Search = () => {
-  const [searchValue, setSearchValue] = React.useState('');
-  console.log(searchValue);
+  const [value, setValue] = React.useState('');
+  // const dispatch = useDispatch();
+  const inputRef = React.useRef();
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  // const updateSearchValue = debounce((str) => {
+  //   dispatch(setSearchValue(str));
+  // }, 800);
+
+  const onChangeInput = (event) => {
+    setValue(event.target.value);
+    // updateSearchValue(event.target.value);
+  };
+
   return (
-    <div>
+    <>
       <input
+        ref={inputRef}
         className={styles.searchInput}
-        value={searchValue}
-        onChange={(e) => setSearchValue(e.target.value)}
-        placeholder='Поиск...'
+        value={value}
+        onChange={(event) => onChangeInput(event.target.value)}
+        placeholder="Поиск..."
       />
-    </div>
+    </>
   );
 };
 

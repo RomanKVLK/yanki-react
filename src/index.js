@@ -15,7 +15,6 @@ if (rootElem) {
       <BrowserRouter>
         <App />
       </BrowserRouter>
-      ,
     </Provider>,
   );
 }
