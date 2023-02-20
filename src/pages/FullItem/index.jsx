@@ -1,22 +1,24 @@
 import React from 'react';
 import styles from './FullItem.module.scss';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addItem } from '../../redux/slices/cart/cartSlice';
 import axios from 'axios';
 
-const FullItem = () => {
-  const { id, title, price, imageUrl } = useParams();
+const FullItem = ({ id, title, price, imageUrl }) => {
+  const { productId } = useParams();
   const [fullProduct, setFullProduct] = React.useState();
   const [fullImage, setFullImage] = React.useState(0);
-  // const cartItem = useSelector((state) => state.cart.items.find((obj) => obj.id === id));
+  const cartItem = useSelector((state) => state.cart.items.find((obj) => obj.id === id));
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
   React.useEffect(() => {
     async function fetchProduct() {
       try {
-        const { data } = await axios.get('https://63e903085f3e35d898f94b79.mockapi.io/items/' + id);
+        const { data } = await axios.get(
+          'https://63e903085f3e35d898f94b79.mockapi.io/items/' + productId,
+        );
         setFullProduct(data);
       } catch (error) {
         alert('Ошибка при получении продукта');
@@ -26,7 +28,7 @@ const FullItem = () => {
 
     fetchProduct();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [id]);
+  }, [productId]);
 
   if (!fullProduct) {
     return 'Загрузка...';
