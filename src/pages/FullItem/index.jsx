@@ -5,13 +5,16 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addItem } from '../../redux/slices/cart/cartSlice';
 import axios from 'axios';
 
-const FullItem = ({ id, title, price, imageUrl }) => {
+const FullItem = ({ id, title, price, imageUrl, structure, description }) => {
   const { productId } = useParams();
   const [fullProduct, setFullProduct] = React.useState();
   const [fullImage, setFullImage] = React.useState(0);
-  const cartItem = useSelector((state) => state.cart.items.find((obj) => obj.id === id));
+  const selectCartItemById = (id) => (state) => state.cart.items.find((obj) => obj.id === id);
+  const cartItem = useSelector(selectCartItemById(id));
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
+  const addedCount = cartItem ? cartItem.count : 0;
 
   React.useEffect(() => {
     async function fetchProduct() {
@@ -40,31 +43,31 @@ const FullItem = ({ id, title, price, imageUrl }) => {
       title,
       price,
       imageUrl,
+      structure,
+      description,
     };
     dispatch(addItem(item));
   };
-
-  // const addedCount = cartItem ? cartItem.count : 0;
 
   return (
     <main>
       <div className={styles.container}>
         <div className={styles.pagination}>
-          Главная <img src='/img/little-arrow.svg' alt='Arrow' /> Каталог{' '}
-          <img src='/img/little-arrow.svg' alt='Arrow' /> Пальто{' '}
-          <img src='/img/little-arrow.svg' alt='Arrow' /> {fullProduct.title}
+          Главная <img src="/img/little-arrow.svg" alt="Arrow" /> Каталог{' '}
+          <img src="/img/little-arrow.svg" alt="Arrow" /> Пальто{' '}
+          <img src="/img/little-arrow.svg" alt="Arrow" /> {fullProduct.title}
         </div>
         <div className={styles.itemBlock}>
           <div className={styles.imageRow}>
             <div className={styles.imageColumn}>
               {fullProduct.imageUrl.map((imageSrc, i) => (
-                <img onClick={() => setFullImage(i)} key={i} src={`/${imageSrc}`} alt='CreamCoat' />
+                <img onClick={() => setFullImage(i)} key={i} src={`/${imageSrc}`} alt="CreamCoat" />
               ))}
             </div>
             <img
               className={styles.mainImage}
               src={`/${fullProduct.imageUrl[fullImage]}`}
-              alt='CreamCoat'
+              alt="CreamCoat"
             />
           </div>
           <div className={styles.infoBlock}>
@@ -76,18 +79,18 @@ const FullItem = ({ id, title, price, imageUrl }) => {
             ))}
             <div className={styles.buttonsBox}>
               <button className={styles.toCart} onClick={onClickAdd}>
-                В корзину
+                {addedCount > 0 && <i>{addedCount}</i>}В корзину
               </button>
               <button className={styles.toFavorites}>
                 <svg
-                  width='15'
-                  height='15'
-                  viewBox='0 0 15 15'
-                  fill='none'
-                  xmlns='http://www.w3.org/2000/svg'>
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
-                    d='M7.50061 1.89671C9.26233 0.314993 11.9848 0.367492 13.682 2.06771C15.3785 3.76868 15.437 6.47763 13.859 8.24459L7.49911 14.6135L1.14073 8.24459C-0.437237 6.47763 -0.377988 3.76418 1.31773 2.06771C3.01645 0.369742 5.73365 0.312743 7.50061 1.89671ZM12.62 3.12744C11.495 2.00096 9.68007 1.95521 8.50259 3.01269L7.50136 3.91118L6.49938 3.01344C5.31816 1.95446 3.50694 2.00096 2.37896 3.12894C1.26148 4.24642 1.20523 6.03514 2.23496 7.21711L7.49986 12.4903L12.7648 7.21786C13.7952 6.03514 13.739 4.24867 12.62 3.12744Z'
-                    fill='#cca88a'
+                    d="M7.50061 1.89671C9.26233 0.314993 11.9848 0.367492 13.682 2.06771C15.3785 3.76868 15.437 6.47763 13.859 8.24459L7.49911 14.6135L1.14073 8.24459C-0.437237 6.47763 -0.377988 3.76418 1.31773 2.06771C3.01645 0.369742 5.73365 0.312743 7.50061 1.89671ZM12.62 3.12744C11.495 2.00096 9.68007 1.95521 8.50259 3.01269L7.50136 3.91118L6.49938 3.01344C5.31816 1.95446 3.50694 2.00096 2.37896 3.12894C1.26148 4.24642 1.20523 6.03514 2.23496 7.21711L7.49986 12.4903L12.7648 7.21786C13.7952 6.03514 13.739 4.24867 12.62 3.12744Z"
+                    fill="#cca88a"
                   />
                 </svg>
                 В избранное

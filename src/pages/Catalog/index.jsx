@@ -8,20 +8,24 @@ import Categories from '../../components/Categories';
 import Pagination from '../../components/Pagination';
 import styles from './Catalog.module.scss';
 
-import { setCategoryId } from '../../redux/slices/filter/filterSlice';
+import { setCategoryId, setCurrentPage } from '../../redux/slices/filter/filterSlice';
 import { fetchProduct } from '../../redux/slices/product/asyncActions';
 
 const Catalog = () => {
-  const [currentPage, setCurrentPage] = React.useState(1);
   const categoryId = useSelector((state) => state.filter.categoryId);
-  // const searchValue = useSelector((state) => state.filter.searchValue);
+  const searchValue = useSelector((state) => state.filter.searchValue);
+  const currentPage = useSelector((state) => state.filter.currentPage);
   const items = useSelector((state) => state.product.items);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  // const search = searchValue ? `&search=${searchValue}` : '';
+  const search = searchValue ? `&search=${searchValue}` : '';
 
   const onChangeCategory = (id) => {
     dispatch(setCategoryId(id));
+  };
+
+  const onChangePage = (page) => {
+    dispatch(setCurrentPage(page));
   };
 
   const getProduct = async () => {
@@ -29,6 +33,7 @@ const Catalog = () => {
       fetchProduct({
         currentPage,
         categoryId,
+        search,
       }),
     );
   };
@@ -36,7 +41,7 @@ const Catalog = () => {
   React.useEffect(() => {
     getProduct();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currentPage, categoryId]);
+  }, [currentPage, categoryId, searchValue]);
 
   React.useEffect(() => {
     const queryString = qs.stringify({
@@ -44,7 +49,7 @@ const Catalog = () => {
       currentPage,
     });
     navigate(`?${queryString}`);
-  }, [categoryId, currentPage, navigate]);
+  }, [categoryId, currentPage, navigate, searchValue]);
 
   return (
     <main>
@@ -63,7 +68,7 @@ const Catalog = () => {
             ))}
           </div>
         </div>
-        <Pagination onChangePage={(num) => setCurrentPage(num)} />
+        <Pagination currentPage={currentPage} onChangePage={onChangePage} />
       </div>
     </main>
   );
