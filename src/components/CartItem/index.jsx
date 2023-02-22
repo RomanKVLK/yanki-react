@@ -5,9 +5,9 @@ import styles from './CartItem.module.scss';
 
 const CartItem = ({ id, title, price, imageUrl, color }) => {
   const dispatch = useDispatch();
-
+  console.log(id);
   const onClickPlus = () => {
-    dispatch(addItem({ id, title: '', price: 0, imageUrl: '', type: '', size: 0, count: 0 }));
+    dispatch(addItem({ id }));
   };
 
   const onClickMinus = () => {

@@ -9,12 +9,9 @@ const FullItem = ({ id, title, price, imageUrl, structure, description }) => {
   const { productId } = useParams();
   const [fullProduct, setFullProduct] = React.useState();
   const [fullImage, setFullImage] = React.useState(0);
-  const selectCartItemById = (id) => (state) => state.cart.items.find((obj) => obj.id === id);
-  const cartItem = useSelector(selectCartItemById(id));
   const navigate = useNavigate();
   const dispatch = useDispatch();
-
-  const addedCount = cartItem ? cartItem.count : 0;
+  const items = useSelector((state) => state.cart.items);
 
   React.useEffect(() => {
     async function fetchProduct() {
@@ -47,6 +44,7 @@ const FullItem = ({ id, title, price, imageUrl, structure, description }) => {
       description,
     };
     dispatch(addItem(item));
+    console.log(item);
   };
 
   return (
@@ -79,7 +77,7 @@ const FullItem = ({ id, title, price, imageUrl, structure, description }) => {
             ))}
             <div className={styles.buttonsBox}>
               <button className={styles.toCart} onClick={onClickAdd}>
-                {addedCount > 0 && <i>{addedCount}</i>}В корзину
+                <i>{items.lenght}</i>
               </button>
               <button className={styles.toFavorites}>
                 <svg

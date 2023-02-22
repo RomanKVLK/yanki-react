@@ -20,23 +20,23 @@ function App() {
   const [searchValue, setSearchValue] = React.useState('');
 
   return (
-    <div className='App'>
+    <div className="App">
       <Header searchValue={searchValue} setSearchValue={setSearchValue} />
       <Routes>
-        <Route path='/' element={<MainPage />} />
-        <Route path='/*' element={<PageNotFound />} />
-        <Route path='/cart' element={<Cart />} />
-        <Route path='/about-us' element={<AboutUs />} />
-        <Route path='/favorites' element={<Favorites />} />
-        <Route path='/catalog' element={<Catalog />} />
-        <Route path='/exchange-and-return' element={<Exchange />} />
-        <Route path='/payment-and-delivery' element={<Payment />} />
+        <Route path="/" element={<MainPage />} />
+        <Route path="/*" element={<PageNotFound />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/favorites" element={<Favorites />} />
+        <Route path="/catalog" element={<Catalog />} />
+        <Route path="/exchange-and-return" element={<Exchange />} />
+        <Route path="/payment-and-delivery" element={<Payment />} />
         <Route
-          path='/contacts'
+          path="/contacts"
           element={<Contacts searchValue={searchValue} setSearchValue={setSearchValue} />}
         />
-        <Route path='/public-offer' element={<PublicOffer />} />
-        <Route path='/full-item/:productId' element={<FullItem />} />
+        <Route path="/public-offer" element={<PublicOffer />} />
+        <Route path="/full-item/:productId" element={<FullItem />} />
       </Routes>
 
       <Footer />

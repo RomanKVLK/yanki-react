@@ -50,6 +50,7 @@ const Catalog = () => {
     });
     navigate(`?${queryString}`);
   }, [categoryId, currentPage, navigate, searchValue]);
+  console.log(items);
 
   return (
     <main>
@@ -62,8 +63,8 @@ const Catalog = () => {
           <Categories value={categoryId} onChangeCategory={(i) => onChangeCategory(i)} />
           <div className={styles.catalogBlock}>
             {items.map((obj) => (
-              <Link to={`/full-item/${obj.id}`}>
-                <ProductItem key={obj.id} {...obj} />
+              <Link key={obj.id} to={`/full-item/${obj.id}`}>
+                <ProductItem {...obj} />
               </Link>
             ))}
           </div>
